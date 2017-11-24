@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .roof {
+  position: relative;
+  top: -40px;
+  left: 10px;
+  /* background: paleturquoise; */
+  width: 95%;
+  height: 180px;
+  /* border: 1px solid green; */
+}
+
+.roof_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.roof_right {
+  float: right;
+  position: relative;
+  /* right: 20px */
+}
+
+.roof_left {
+  float: left;
+}
+.login_box{
+   border:1px solid red;
+background: deepskyblue;
+opacity: 0.9;
+width: 40%;
+z-index: 5;
+height:300px ;
+margin: 10% auto;
+ } 
+ .login_head{
+border-bottom: 1px solid black;
+height: 50px;
+line-height: 50px
+ }
+ .login_head>span{
+   margin-left: 40px;
+   font-size: 30px;
+ }
+ .login_head>button{
+ float: right;
+  font-size: 30px;
+  background: white;
+  color: gray;
+  margin-top:5px; 
+ }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+
+      <div class="row">
+          <div class="login_box col-lg-6 col-md-6 col-sm-10 col-xs-10 ">
+          <div class="login_head"><span>登录账号</span><button>X</button></div>
+          <form method="POST" name="form_login" target="_top">
+							<div align="center">
+								<a href="" >短信快捷登录</a>
+								<i class="icon-mobile-phone"></i>
+								<input type="text" name="name" id="name" required="required" placeholder="用户名" autocomplete="off" class="input_yh">
+								<input type="password" name="pass" id="pass" required="required" placeholder="密码" autocomplete="off" class="input_mm">
+							</div>
+							<dd>
+								<div align="center"><a href="">遇到登录问题</a></div>
+							</dd>
+							<div align="center">
+								<input type="submit" class="button" title="Sign In" value="登录">
+							</div>
+						</form>   
+          </div>
+          </div>
+
+
+
+
+
+        <div class="roof">
+          <div class="roof_left" >
+            <img src="../../static/images/logo.jpg" alt="logo">
+          </div>
+          <div class="roof_right ">
+    
+        
+          <!-- <a href="#"></a> -->
+          <button  class="btn btn-info " @click="help">帮助</button>
+          <ul class=" help" id="ohelp">
+          </ul>
+        
+    <!-- 帮助 -->
+    
+            <button>登录</button>
+    
+
+
+
+            <button>注册</button>
+            <img src="../../static/images/swkong.jpg" alt="用户头像" class='roof_img'/> 
+        
+          </div>
+          </div>
+    <!-- roof 头部 -->
+    
+          
+          <div class="declare row">
+            <h1 class="decla col-lg-8 col-md-8 col-sm-10 col-xs-10" >俏旅行</h1>
+            <h2 class="decl col-lg-8 col-md-8 col-sm-10 col-xs-10">爱旅游，爱上俏旅行</h2>
+         
+          </div>
+        
+    
+        <div class="main row">
+          <div class="search col-lg-10 col-md-10 col-sm-10 col-xs-10" >
+            <label for="search" class="search_top">地点</label>
+            <input type="text" id="search" placeholder="目的地，城市，地址" class="search_site   col-lg-9 col-md-4 col-sm-6">
+            <button class="seek">
+             <span class="seek"> 搜索</span>
+              </button>
+          </div>
+    
+    
+          <div class=" place">
+    <h3 class="hot ">热门目的地</h3>
+          <div class="hot_site  ">
+            <a href="#">大理</a>
+            <a href="#">纽约</a>
+            <a href="#">成都</a>
+            <a href="#">北京</a>
+            <a href="#">上海</a>
+          </div>
+          </div>
+          
+         <ul class="house"  >
+            <li class="row">
+              <div class='col-lg-4 col-md-4 col-sm-6 col-xs-10'>
+              <img src="../../static/images/hy0001.jpg" alt="推荐民宿" class="house_img"/>
+              <!-- 这个div将用来做动作，hover时，这些提示上移 -->
+            <div>
+                <span>￥294每晚</span>
+              <div class="house_ye">
+                 <p class="house_dd">地理位置便利，1分钟可达BTS空铁，提供WiFi</p>
+              </div>
+            
+               <p class="house_p">整套房子/公寓•一室一厅一卫</p>        
+             </div>
+             </div>
+            </li>
+            
+           
+          </ul>
+          <div class="butt">
+            <button type="button" class="bttou">查看更多大理房源</button>
+          </div>
+        </div>
+          <div class="bodr">
+          </div>
+        <div class="footer">
+          <a href="#">关于我们</a>
+          <a>tel:137xxxxxxx</a>
+        </div>
+      </div>
+          
+          
+         
+</body>
+</html>
